@@ -1,0 +1,47 @@
+header {
+  background: #1c1c1c;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .meniu-burger {
+    display: none;
+  }
+}
+
+nav {
+  ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+
+    li {
+      list-style: none;
+      display: flex;
+      align-self: stretch;
+      align-items: center;
+      border-bottom: 2px solid #e27866;
+
+      a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.69;
+      }
+    }
+  }
+}
+
+.side-menu-wrap {
+  display: none;
+}
