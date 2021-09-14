@@ -1,0 +1,92 @@
+#tabs-block {
+  height: 595px;
+  background: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42)),
+    url('../../img/tabs_background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  .tabs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  .tabs-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    .tab {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(163, 113, 105, 1);
+      border: 2px solid blue;
+      &:hover {
+        background-color: rgba(226, 120, 102, 1);
+      }
+      span {
+        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        display: block;
+      }
+    }
+  }
+  .tabs-text {
+    h2,
+    p {
+      border: 2px solid blue;
+      color: rgba(255, 255, 255, 1);
+    }
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+      opacity: 0.79;
+    }
+  }
+  .tabs-img {
+    flex: 1 0 356px;
+    display: grid;
+    grid-template-areas: 'firstimg secondimg' 'thirdimg thirdimg';
+    // grid-template-columns: ;
+    grid-gap: 20px;
+    .first {
+      grid-area: firstimg;
+    }
+    .second {
+      grid-area: secondimg;
+    }
+    .third {
+      grid-area: thirdimg;
+    }
+    .tabs-img1 {
+      max-width: 168px;
+      width: 100%;
+      height: auto;
+    }
+    .tabs-img2 {
+      max-width: 362px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  img:hover {
+    background-color: rgba(226, 120, 102, 1);
+    opacity: 0.2 !important;
+    filter: alpha(opacity=70) !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+    cursor: pointer;
+  }
+}
