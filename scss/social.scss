@@ -1,0 +1,29 @@
+#social-block {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  .social-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .social-text {
+      border: 1px solid orchid;
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        margin-bottom: 8px;
+      }
+      p {
+        color: #86878b;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .social-icons {
+      display: flex;
+      gap: 120px;
+      border: 1px solid orchid;
+    }
+  }
+}
