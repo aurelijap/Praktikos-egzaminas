@@ -11,6 +11,10 @@ header {
     .logo {
       display: flex;
       align-items: center;
+      img {
+           width: 119px;
+        height: auto;
+      }
     }
   }
   .meniu-burger {
@@ -31,12 +35,17 @@ nav {
       display: flex;
       align-self: stretch;
       align-items: center;
-      border-bottom: 2px solid #e27866;
-
+      border-bottom: 2px solid transparent;
+      &:hover {
+        border-bottom: 2px solid #e27866;
+      }
       a {
         color: white;
         text-decoration: none;
         opacity: 0.69;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
