@@ -1,0 +1,23 @@
+#footer-social-block {
+    background: rgba(28, 28, 28, 1);
+  display: flex;
+  justify-content: center;
+
+  .social-wrapper {
+    display: flex;
+    justify-content: space-between;
+      padding: 30px 0;
+
+    .footer-social-text {
+      p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        line-height: 14px;
+      }
+    }
+    .footer-social-icons {
+      display: flex;
+      gap: 120px;
+    }
+  }
+}
