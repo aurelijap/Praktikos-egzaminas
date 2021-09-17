@@ -10,12 +10,14 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+
     .awesome-title-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 30px;
+
       h2 {
         color: rgba(33, 33, 33, 1);
         font-size: 36px;
@@ -32,6 +34,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 50px;
+      //   border: 1px solid red;
+
       .awesome-item-wrapper {
         display: flex;
         flex-direction: column;

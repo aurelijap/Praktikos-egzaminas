@@ -15,7 +15,7 @@
       flex-direction: column;
       flex: 2;
       gap: 30px;
-      border: 1px solid blue;
+      //   border: 1px solid blue;
       h1,
       p {
         color: #ffffff;
@@ -51,7 +51,7 @@
       align-items: stretch;
       justify-content: flex-end;
       flex: 1.2;
-      border: 1px solid blue;
+      //   border: 1px solid blue;
     }
   }
 
@@ -68,7 +68,7 @@
       border-radius: 5px 5px 0 0;
       padding: 16.5px 15px;
       span {
-          color: #d17804;
+        color: #d17804;
       }
     }
     button {
@@ -110,7 +110,6 @@
     }
   }
 }
-
 
 .radios-container {
   $zalia: #41d395;
@@ -162,4 +161,3 @@
     }
   }
 }
-

@@ -1,13 +1,14 @@
 #social-block {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+
   .social-wrapper {
     display: flex;
     justify-content: space-between;
+      padding: 30px 0;
 
     .social-text {
-      border: 1px solid orchid;
+      //   border: 1px solid orchid;
       h2 {
         font-size: 20px;
         font-weight: 600;
@@ -23,7 +24,10 @@
     .social-icons {
       display: flex;
       gap: 120px;
-      border: 1px solid orchid;
+      //   border: 1px solid orchid;
+      // //   .social {
+      // //     color: rgba(226, 120, 102, 1);
+      //   }
     }
   }
 }
