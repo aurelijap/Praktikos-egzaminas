@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <!-- <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="app/css/style.css" />
 
     <title>Praktikos egzaminas</title>
@@ -328,27 +329,132 @@
       <div class="content-width talking-wrapper">
         <div class="talking-text">
           <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+          <img class="img-blue" src="img/divider_blue.svg" alt="divider blue" />
         </div>
-        <div class="people">
-          <div class="person">
-            <div class="avatar img"><img src="img/avatar.png" alt="avatar" /></div>
-            <h3>Jeremy H.</h3>
-            <p>Manager</p>
+        <div class="people-container swiper">
+          <div class="swiper-wrapper">
+            <div class="person swiper-slide">
+              <div class="msg-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                expedita repellat similique odio aspernatur ex.
+              </div>
+              <div class="avatar">
+                <div class="avatar-img"><img src="img/avatar.png" alt="avatar" /></div>
+                <div>
+                  <h3>Jeremy H.</h3>
+                  <p>Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="person swiper-slide">
+              <div class="msg-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                expedita.
+              </div>
+
+              <div class="avatar">
+                <div class="avatar-img"><img src="img/avatar.png" alt="avatar" /></div>
+                <div>
+                  <h3>John S.</h3>
+                  <p>Freelancer</p>
+                </div>
+              </div>
+            </div>
+            <div class="person swiper-slide">
+              <div class="msg-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                expedita repellat similique odio aspernatur ex.
+              </div>
+              <div class="avatar">
+                <div class="avatar-img"><img src="img/avatar.png" alt="avatar" /></div>
+                <div>
+                  <h3>Susan W.</h3>
+                  <p>Photographer</p>
+                </div>
+              </div>
+            </div>
+            <div class="person swiper-slide">
+              <div class="msg-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                expedita repellat similique odio aspernatur ex.
+              </div>
+              <div class="avatar">
+                <div class="avatar-img"><img src="img/avatar.png" alt="avatar" /></div>
+                <div class="avatar-text">
+                  <h3>Jeremy H.</h3>
+                  <p>Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="person swiper-slide">
+              <div class="msg-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                expedita.
+              </div>
+
+              <div class="avatar">
+                <div class="avatar-img"><img src="img/avatar.png" alt="avatar" /></div>
+                <div class="avatar-text">
+                  <h3>John S.</h3>
+                  <p>Freelancer</p>
+                </div>
+              </div>
+            </div>
+            <div class="person swiper-slide">
+              <div class="msg-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                expedita repellat similique odio aspernatur ex.
+              </div>
+              <div class="avatar">
+                <div class="avatar-img"><img src="img/avatar.png" alt="avatar" /></div>
+                <div class="avatar-text">
+                  <h3>Susan W.</h3>
+                  <p>Photographer</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar img"><img src="img/avatar.png" alt="avatar" /></div>
-            <h3>John S.</h3>
-            <p>Freelancer</p>
-          </div>
-          <div class="person">
-            <div class="avatar img"><img src="img/avatar.png" alt="avatar" /></div>
-            <h3>Susan W.</h3>
-            <p>Photographer</p>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
 
-    <!-- <script src="script.js"></script> -->
+    <!-- Contact block -->
+    <div id="contact">
+      <div class="content-width contact-wrapper">
+        <h3>CONTACT US</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <form class="contact-form">
+          <input placeholder="First name" name="firstname" type="text" />
+          <input placeholder="Last name" name="lastname" type="text" />
+          <input placeholder="Phone number" name="phone" type="text" />
+
+          <div class="radios-container">
+            <div class="custom-radio">
+              <input type="radio" name="personalandcompany" id="personal" value="personal" checked />
+              <label for="personal">
+                <div class="radio"></div>
+                <span>PERSONAL</span>
+              </label>
+            </div>
+            <div class="custom-radio">
+              <input type="radio" name="personalandcompany" id="company" value="company" />
+              <label for="company">
+                <div class="radio"></div>
+                <span>COMPANY</span>
+              </label>
+            </div>
+          </div>
+
+          <button>SEND</button>
+        </form>
+      </div>
+    </div>
+    <!-- Swiper biblioteka -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--  -->
+    <script src="script.js"></script>
   </body>
 </html>

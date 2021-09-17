@@ -6,27 +6,84 @@
   //   padding: 20px 0;
   .talking-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 150px 0;
-    .people {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 50px;
-      justify-content: center;
-      align-items: center;
-      //   .avatar {
-      //     width: 70px;
-      //     height: 70px;
-      //   }
-      .talking-text {
-        border: 1px solid orchid;
-        h2 {
-          font-size: 36px;
-          line-height: 43px;
-          font-weight: 600;
-          color: rgba(28, 28, 28, 1);
+    .talking-text {
+      margin-bottom: 50px;
+      h2 {
+        font-size: 36px;
+        line-height: 43px;
+        font-weight: 600;
+        color: rgba(28, 28, 28, 1);
+        margin-bottom: 30px;
+      }
+      // h3 {
+      //   color: rgba(51, 51, 51, 1);
+      //   font-size: 20px;
+      //   line-height: 24px;
+      // }
+      // p {
+      //   color: rgba(134, 135, 139, 1);
+      //   font-size: 14px;
+      //   line-height: 17px;
+      // }
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-pagination {
+      position: relative;
+    }
+    .people-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 80px;
+
+      //       @media (max-width: 600px) {
+      //   flex-direction: column;
+      // }
+      .person {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        .msg-text {
+          position: relative;
+          text-align: left;
+          padding: 20px;
+          background: rgba(102, 150, 226, 1);
+          border-radius: 8px;
+          font-size: 16px;
+          line-height: 22px;
+          color: rgba(255, 255, 255, 1);
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 8%;
+            border-top: 10px solid rgba(102, 150, 226, 1);
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+          }
         }
+
+        .avatar {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+      img {
+        width: 70px;
+        height: 70px;
+      }
+      .avatar-text {
         h3 {
           color: rgba(51, 51, 51, 1);
           font-size: 20px;
@@ -38,13 +95,6 @@
           line-height: 17px;
         }
       }
-
-      //   display: flex;
-      //   gap: 120px;
-      //   border: 1px solid orchid;
-      // //   .social {
-      // //     color: rgba(226, 120, 102, 1);
-      //   }
     }
   }
 }
