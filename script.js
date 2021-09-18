@@ -2,11 +2,6 @@
 function changeMenu(target, name) {
   target.preventDefault();
   var menuItem = document.getElementsByClassName('menu-item');
-  var menu = document.getElementById('menu-wrap');
-  var menuBurger = document.getElementById('burger');
-  if (menuBurger.style.display != 'none') {
-    menu.style.display = 'none';
-  }
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].classList.remove('active');
   }
@@ -16,12 +11,18 @@ function changeMenu(target, name) {
   window.scrollTo({ top: y, behavior: 'smooth' });
 }
 
-console.log(window.screen.width);
-if (window.screen.width > 700) {
-  console.log(window.screen.width);
-  var menu = document.getElementById('menu-wrap');
-  menu.style.display = 'flex';
-}
+window.addEventListener(
+  'resize',
+  function () {
+    var menu = document.getElementById('menu-wrap');
+    if (window.screen.width > 700) {
+      menu.style.display = 'flex';
+    } else {
+      menu.style.display = 'none';
+    }
+  },
+  true
+);
 
 function offset(el) {
   var rect = el.getBoundingClientRect().top;
