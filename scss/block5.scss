@@ -1,15 +1,22 @@
 #block5 {
   background: rgba(28, 28, 28, 1);
-  height: 596px;
+  // height: 596px;
   display: flex;
   justify-content: center;
   border: 1px solid red;
+
   .block5-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
     .block5-title {
       display: flex;
       flex-direction: column;
@@ -47,6 +54,9 @@
     flex-direction: column;
     color: rgba(255, 255, 255, 1);
     gap: 30px;
+    @media (max-width: 900px) {
+      align-items: center;
+    }
 
     h2 {
       font-size: 30px;
@@ -66,6 +76,9 @@
     .img-orange {
       display: flex;
       align-self: baseline;
+      @media (max-width: 900px) {
+        align-self: center;
+      }
     }
   }
 }

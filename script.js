@@ -15,18 +15,6 @@ function tikrintiFormosDuomenis() {
   var form = document.getElementById('form');
   form.reset();
 }
-
-// Talking blokas
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
-  spaceBetween: 100,
-  freeMode: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
 // Tabs blokas
 var tab = document.getElementById('pirmastabas');
 tab.style.display = 'block';
@@ -41,6 +29,18 @@ function changeTab(target, name) {
   tab.style.display = 'block';
   target.currentTarget.classList.add('active');
 }
+
+// Talking blokas
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  spaceBetween: 100,
+  freeMode: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 
 // Contact blokas
 function tikrintiContactFormosDuomenis() {

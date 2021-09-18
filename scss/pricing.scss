@@ -11,6 +11,7 @@
     align-items: center;
     gap: 50px;
     padding: 100px 0;
+
     // border: 1px solid rgb(255, 0, 170);
     .pricing-title-wrapper {
       display: flex;
@@ -23,21 +24,26 @@
         font-size: 36px;
         line-height: 43px;
         font-weight: 600;
+        text-align: center;
       }
       p {
         color: rgba(255, 255, 255, 1);
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
       }
     }
     .pricing-block {
       display: flex;
-      //   grid-template-columns: 1fr 1fr 1fr;
       justify-content: space-between;
       align-items: flex-end;
       width: 100%;
       gap: 50px;
       //   border: 1px solid rgb(0, 204, 255);
+      @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+      }
 
       .pricing-item-wrapper {
         display: flex;
@@ -45,7 +51,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        // gap: 30px;
+        max-width: 350px;
         background: black;
         border-radius: 10px;
         // border: 1px solid rgb(0, 255, 76);

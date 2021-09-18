@@ -1,22 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: white;
-  min-width: 324px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-}
-
-.content-width {
-  max-width: 1200px;
-  width: 100%;
-  border: 1px solid red;
-  margin: 0 20px;
-}
-
+@import 'global.scss';
 @import 'header.scss';
 @import 'radio.scss';
 @import 'hero.scss';

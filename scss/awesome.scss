@@ -1,6 +1,6 @@
 #awesome {
   background: rgba(255, 255, 255, 1);
-  height: 592px;
+  // height: 592px;
   display: flex;
   justify-content: center;
   border: 1px solid red;
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-
+    padding: 80px 0;
     .awesome-title-wrapper {
       display: flex;
       flex-direction: column;
@@ -23,18 +23,25 @@
         font-size: 36px;
         line-height: 43px;
         font-weight: 600;
+        text-align: center;
       }
       p {
         color: rgba(134, 135, 139, 1);
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
       }
     }
     .awesome-icons {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 50px;
+      align-items: flex-start;
       //   border: 1px solid red;
+      @media (max-width: 750px) {
+        grid-template-columns: 1fr;
+        align-items: center;
+      }
 
       .awesome-item-wrapper {
         display: flex;
