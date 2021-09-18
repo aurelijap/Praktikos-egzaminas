@@ -27,25 +27,33 @@
 
         <!-- Top menu -->
         <nav>
-          <ul class="menu-wrap">
-            <li><a chref="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <div id="burger" class="meniu-burger"></div>
+          <ul id="menu-wrap">
+            <li>
+              <a href="#features" class="menu-item" onclick="changeMenu(event, 'tabs-block')"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="menu-item" onclick="changeMenu(event, 'block5')">About</a>
+            </li>
+            <li>
+              <a href="#pricing" class="menu-item" onclick="changeMenu(event, 'pricing')"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a href="#reviews" class="menu-item" onclick="changeMenu(event, 'talking-block')"
+                >Reviews</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="menu-item" onclick="changeMenu(event, 'contact')"
+                >Contact</a
+              >
+            </li>
           </ul>
+          <div id="burger" class="meniu-burger" onclick="showMenu()"></div>
         </nav>
-        <!-- Side menu -->
-        <div id="side-menu" class="side-menu-wrap">
-          <ul>
-            <li><a href="#heatures">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#ricing">Pricing</a></li>
-            <li><a href="#reviews">Revwies</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
       </div>
     </header>
 
@@ -138,7 +146,7 @@
           <div class="tab" onclick="changeTab(event, 'antrastabas')">
             <span>APPLY</span>
           </div>
-          <div class="tab" onclick="changeTab(event, 'treciastabas')" >
+          <div class="tab" onclick="changeTab(event, 'treciastabas')">
             <span>RECEIVE</span>
           </div>
         </div>
@@ -157,25 +165,21 @@
           </p>
         </div>
         <div id="antrastabas" class="tabs-text">
-          <h2>
-            Tabs with soft transitioning effect. 
-          </h2>
+          <h2>Tabs with soft transitioning effect.</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
-            laoreet. 
+            laoreet.
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. .
           </p>
         </div>
         <div id="treciastabas" class="tabs-text">
-          <h2>
-           Explained propriety of out perpetual his you.
-          </h2>
+          <h2>Explained propriety of out perpetual his you.</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
             laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
-            sodales pulvinar tempor. 
+            sodales pulvinar tempor.
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum

@@ -1,3 +1,44 @@
+// Meniu
+function changeMenu(target, name) {
+  target.preventDefault();
+  var menuItem = document.getElementsByClassName('menu-item');
+  var menu = document.getElementById('menu-wrap');
+  var menuBurger = document.getElementById('burger');
+  if (menuBurger.style.display != 'none') {
+    menu.style.display = 'none';
+  }
+  for (var i = 0; i < menuItem.length; i++) {
+    menuItem[i].classList.remove('active');
+  }
+  const el = document.getElementById(name);
+  var y = offset(el) - 70;
+  target.currentTarget.classList.add('active');
+  window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
+console.log(window.screen.width);
+if (window.screen.width > 700) {
+  console.log(window.screen.width);
+  var menu = document.getElementById('menu-wrap');
+  menu.style.display = 'flex';
+}
+
+function offset(el) {
+  var rect = el.getBoundingClientRect().top;
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  return rect + scrollTop;
+}
+
+// Show menu
+function showMenu() {
+  var myMenu = document.getElementById('menu-wrap');
+  if (myMenu.style.display == 'flex') {
+    myMenu.style.display = 'none';
+  } else {
+    myMenu.style.display = 'flex';
+  }
+}
+
 // Formos blokas
 function tikrintiFormosDuomenis() {
   var firstName = document.getElementById('firstname').value;
@@ -40,7 +81,6 @@ var swiper = new Swiper('.swiper', {
     clickable: true,
   },
 });
-
 
 // Contact blokas
 function tikrintiContactFormosDuomenis() {

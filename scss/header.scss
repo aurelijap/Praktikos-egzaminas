@@ -4,6 +4,8 @@ header {
   height: 72px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 1000;
   .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -12,13 +14,10 @@ header {
       display: flex;
       align-items: center;
       img {
-           width: 119px;
+        width: 119px;
         height: auto;
       }
     }
-  }
-  .meniu-burger {
-    display: none;
   }
 }
 
@@ -29,7 +28,19 @@ nav {
     justify-content: space-between;
     align-items: stretch;
     gap: 40px;
-
+    transition: all 1.3s ease;
+    @media (max-width: 700px) {
+      display: none;
+      position: absolute;
+      gap: 20px;
+      flex-direction: column;
+      right: 0;
+      top: 72px;
+      background: #1c1c1c;
+      z-index: 2000;
+      height: auto;
+      padding: 15px 60px;
+    }
     li {
       list-style: none;
       display: flex;
@@ -47,10 +58,30 @@ nav {
           opacity: 1;
         }
       }
+      .active {
+        opacity: 1;
+      }
     }
   }
 }
 
-.side-menu-wrap {
+.meniu-burger {
   display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  background: url('../../img/burger.svg');
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.69;
+  }
+  @media (max-width: 700px) {
+    display: block;
+  }
 }
+
+
