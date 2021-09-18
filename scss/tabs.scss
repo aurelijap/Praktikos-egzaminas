@@ -18,6 +18,9 @@
     flex-direction: column;
     gap: 20px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    .active {
+      background: rgba(226, 120, 102, 1) !important;
+    }
     .tab {
       width: 100px;
       height: 100px;
@@ -26,8 +29,10 @@
       align-items: center;
       background: rgba(163, 113, 105, 1);
       // border: 2px solid blue;
+
       &:hover {
         background-color: rgba(226, 120, 102, 1);
+        cursor: pointer;
       }
       span {
         transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
@@ -39,6 +44,7 @@
     }
   }
   .tabs-text {
+    display: none;
     h2,
     p {
       // border: 2px solid blue;

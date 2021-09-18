@@ -68,13 +68,13 @@
           <button>DOWNLOAD</button>
         </div>
         <div class="hero-form">
-          <form>
+          <form id="form">
             <h3>Try Your <span>FREE</span> Trial Today</h3>
             <div class="form-wrapper">
               <div class="text-p">Your details</div>
-              <input placeholder="First name" name="firstname" type="text" />
-              <input placeholder="Last name" name="lastname" type="text" />
-              <input placeholder="Phone number" name="phone" type="text" />
+              <input id="firstname" placeholder="First name" name="firstname" type="text" />
+              <input id="lastname" placeholder="Last name" name="lastname" type="text" />
+              <input id="phone" placeholder="Phone number" name="phone" type="text" />
               <div class="text-p">Type of subscription</div>
 
               <div class="radios-container">
@@ -102,7 +102,7 @@
               </div>
             </div>
 
-            <button>GET STARTED</button>
+            <button onclick="tikrintiFormosDuomenis()" type="button">GET STARTED</button>
           </form>
         </div>
       </div>
@@ -132,17 +132,17 @@
     <div id="tabs-block">
       <div class="content-width tabs-wrapper">
         <div class="tabs-buttons">
-          <div class="tab">
+          <div class="tab active" onclick="changeTab(event, 'pirmastabas')">
             <span>REGISTER</span>
           </div>
-          <div class="tab">
+          <div class="tab" onclick="changeTab(event, 'antrastabas')">
             <span>APPLY</span>
           </div>
-          <div class="tab">
+          <div class="tab" onclick="changeTab(event, 'treciastabas')" >
             <span>RECEIVE</span>
           </div>
         </div>
-        <div class="tabs-text">
+        <div id="pirmastabas" class="tabs-text">
           <h2>
             Tabs with soft transitioning effect. Explained propriety of out perpetual his you.
           </h2>
@@ -150,6 +150,32 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
             laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
             sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet.
+          </p>
+        </div>
+        <div id="antrastabas" class="tabs-text">
+          <h2>
+            Tabs with soft transitioning effect. 
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet. 
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. .
+          </p>
+        </div>
+        <div id="treciastabas" class="tabs-text">
+          <h2>
+           Explained propriety of out perpetual his you.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+            laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+            sodales pulvinar tempor. 
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
@@ -418,10 +444,15 @@
         <h3>CONTACT US</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-        <form class="contact-form">
-          <input placeholder="First name" name="firstname" type="text" />
-          <input placeholder="Last name" name="lastname" type="text" />
-          <input placeholder="Phone number" name="phone" type="text" />
+        <form class="contact-form" id="contactform">
+          <input
+            id="firstnamecontact"
+            placeholder="First name"
+            name="firstnamecontact"
+            type="text"
+          />
+          <input id="lastnamecontact" placeholder="Last name" name="lastnamecontact" type="text" />
+          <input id="phonecontact" placeholder="Phone number" name="phonecontact" type="text" />
 
           <div class="radios-container">
             <div class="custom-radio">
@@ -446,7 +477,7 @@
             </div>
           </div>
 
-          <button>SEND</button>
+          <button onclick="tikrintiContactFormosDuomenis()" type="button">SEND</button>
         </form>
       </div>
     </div>

@@ -79,6 +79,10 @@
       border: none;
       padding: 17.5px;
       border-radius: 0 0 5px 5px;
+      &:hover {
+          background: #3dbd87;
+          cursor: pointer;
+      }
     }
     h3,
     button {

@@ -50,6 +50,10 @@
         height: 48px;
         border: none;
         border-radius: 5px;
+        &:hover {
+          background: #3dbd87;
+          cursor: pointer;
+        }
       }
     }
   }
