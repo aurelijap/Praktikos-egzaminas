@@ -1,19 +1,28 @@
+// Logo
+function goToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 // Meniu
 function changeMenu(target, name) {
-  target.preventDefault();
+  // susirandame visus "menu item'us" ir cikle išmetam klasę active.
   var menuItem = document.getElementsByClassName('menu-item');
   for (var i = 0; i < menuItem.length; i++) {
     menuItem[i].classList.remove('active');
   }
-  const el = document.getElementById(name);
-  var y = offset(el) - 70;
+  // paspaustam elementui uždedam klasę active
   target.currentTarget.classList.add('active');
+  // susirandam elementą pagal "ID" į kurį turime nuskrolinti langą
+  const el = document.getElementById(name);
+  // susirandame "el" elemento "y" koordinatę panaudojant funkciją "offset"
+  var y = offset(el) - 70;
   window.scrollTo({ top: y, behavior: 'smooth' });
 }
 
 window.addEventListener(
   'resize',
   function () {
+    console.log(window.screen.width);
     var menu = document.getElementById('menu-wrap');
     if (window.screen.width > 700) {
       menu.style.display = 'flex';
@@ -57,9 +66,11 @@ function tikrintiFormosDuomenis() {
   var form = document.getElementById('form');
   form.reset();
 }
+
 // Tabs blokas
 var tab = document.getElementById('pirmastabas');
 tab.style.display = 'block';
+
 function changeTab(target, name) {
   var tabs = document.getElementsByClassName('tabs-text');
   var buttons = document.getElementsByClassName('tab');
@@ -74,12 +85,22 @@ function changeTab(target, name) {
 
 // Talking blokas
 var swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 100,
   freeMode: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  breakpoints: {
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
   },
 });
 

@@ -38,12 +38,9 @@
       .person {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: flex-start;
         gap: 20px;
-        @media (max-width: 800px) {
-          flex-direction: column;
-        }
 
         .msg-text {
           position: relative;
